@@ -1,6 +1,9 @@
 import time
+import datetime
 from selenium import webdriver
 import re
+
+dt = datetime.datetime.now()
 
 driver = webdriver.Firefox(executable_path=r'E:\pit\geckodriver\geckodriver.exe')
 driver.get("http://81.30.218.195:81/tekl/")
