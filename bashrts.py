@@ -33,7 +33,7 @@ for i in range(1, 631):
     a = driver.find_element_by_xpath(x).text
     print(a)
     
-    tip = re.search(r'(Теплоснабжение[\w\s\№-]+)\n', ord3.text)
+    tip = re.search(r'\n([\w\s\№-]*Теплоснабжение[\w\s\№-]*)\n', ord3.text)
     if tip:
         tip = tip.group(1)
         #print(tip)
